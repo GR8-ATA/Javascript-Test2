@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Expense Tracker</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;800;900&display=swap" rel="stylesheet">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="https://unpkg.com/flowbite@1.3.4/dist/flowbite.min.css" />
+        <link
+              rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+              integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+              crossorigin="anonymous"
+              referrerpolicy="no-referrer"/>
+        <script src="https://cdn.tailwindcss.com"></script>
+    
+        <link href="./dist/output.css" rel="stylesheet">
+    
+        <link href="./css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/flowbite@1.3.4/dist/flowbite.min.css" />
+           
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" /> 
+    </head>
+<body>
+    <h2>Expense Tracker</h2>    
+    <div class="container">
+        <h4>Your Balance</h4>
+        <h1 id="balace">$0.00</h1>
+        <div class="inc-exp-container">
+            <div>
+                <h4>Income</h4>
+                <p id="money-plus" class="money-plus">+$0.00</p>
+
+            </div>
+
+            <div>
+                <h4>Expense</h4>
+                <p id="money-minus" class="money-minus">
+                    -$0.00
+                </p>
+            </div> 
+        </div>
+        
+        <h3>History</h3>
+        <ul>
+            <li class="minus">
+                Cash <span>-$400</span><button class="delete-btn">X</button>
+            </li> 
+        </ul>
+
+        <h3>Add New Transanction</h3>
+        <form id="form">
+
+            <div class="form-control">
+                
+                <label for="Text">Text</label>
+                <input type="text" id="text" placeholder="Enter text..."
+            </div>
+
+            <div class="form-control">
+
+                <label for="amount">Amount</label>
+                <input type="number" id="amount" placeholder="Enter amount..."
+            </div>
+            <button class="btn">All Transactions</button>
+        </form> 
+                   
+        
+    </div>
+
+
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
